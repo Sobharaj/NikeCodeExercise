@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E26B06E24955D26001F5757 /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26B06D24955D26001F5757 /* AlbumDetailView.swift */; };
+		3E26B07324956484001F5757 /* AlbumListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26B07024956484001F5757 /* AlbumListViewModel.swift */; };
+		3E26B07524956484001F5757 /* AlbumCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26B07224956484001F5757 /* AlbumCellViewModel.swift */; };
+		3E26B078249564BB001F5757 /* AlbumDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26B077249564BB001F5757 /* AlbumDetailViewModel.swift */; };
+		3E26B07D2495A452001F5757 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26B07C2495A452001F5757 /* Mock.swift */; };
+		3E26B07F2495A49E001F5757 /* MockAlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26B07E2495A49E001F5757 /* MockAlbumService.swift */; };
+		3E26B0852495B2FC001F5757 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26B07C2495A452001F5757 /* Mock.swift */; };
+		3E2B18362496ED500085A16F /* AlbumListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B18352496ED500085A16F /* AlbumListViewControllerTest.swift */; };
+		3E2B18382496EE970085A16F /* AlbumDetailViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B18372496EE970085A16F /* AlbumDetailViewControllerTest.swift */; };
+		3E2B18432497048A0085A16F /* ImageDownloadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B183F2497048A0085A16F /* ImageDownloadHelper.swift */; };
+		3E2B18442497048A0085A16F /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B18402497048A0085A16F /* AsyncImage.swift */; };
+		3E2B18452497048A0085A16F /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B18412497048A0085A16F /* Observable.swift */; };
+		3E2B18462497048A0085A16F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B18422497048A0085A16F /* Helper.swift */; };
+		3E2B1849249704D50085A16F /* StringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B1848249704D50085A16F /* StringConstant.swift */; };
+		3E2B184B249704E90085A16F /* FontConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B184A249704E90085A16F /* FontConstant.swift */; };
+		3E2B184C24970F270085A16F /* StringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B1848249704D50085A16F /* StringConstant.swift */; };
+		3E31087024940F2500C0D798 /* AlbumListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E31086E24940F2500C0D798 /* AlbumListCell.swift */; };
+		3E31087124940F2500C0D798 /* AlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E31086F24940F2500C0D798 /* AlbumListViewController.swift */; };
+		3E31087424940F5900C0D798 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E31087324940F5900C0D798 /* AlbumDetailViewController.swift */; };
+		3E49240D2491AD2500375A44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49240C2491AD2500375A44 /* AppDelegate.swift */; };
+		3E49240F2491AD2500375A44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49240E2491AD2500375A44 /* SceneDelegate.swift */; };
+		3E4924162491AD2900375A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E4924152491AD2900375A44 /* Assets.xcassets */; };
+		3E4924192491AD2900375A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4924172491AD2900375A44 /* LaunchScreen.storyboard */; };
+		3E4924872493107E00375A44 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4924862493107E00375A44 /* HTTPManager.swift */; };
+		3E4924892493162C00375A44 /* AlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4924882493162C00375A44 /* AlbumService.swift */; };
+		3E49248C2493186D00375A44 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49248B2493186D00375A44 /* AlbumModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E4924202491AD2900375A44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E4924012491AD2500375A44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E4924082491AD2500375A44;
+			remoteInfo = NikeCodeExercise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E26B06D24955D26001F5757 /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
+		3E26B07024956484001F5757 /* AlbumListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListViewModel.swift; sourceTree = "<group>"; };
+		3E26B07224956484001F5757 /* AlbumCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCellViewModel.swift; sourceTree = "<group>"; };
+		3E26B077249564BB001F5757 /* AlbumDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewModel.swift; sourceTree = "<group>"; };
+		3E26B07C2495A452001F5757 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		3E26B07E2495A49E001F5757 /* MockAlbumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlbumService.swift; sourceTree = "<group>"; };
+		3E2B18352496ED500085A16F /* AlbumListViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewControllerTest.swift; sourceTree = "<group>"; };
+		3E2B18372496EE970085A16F /* AlbumDetailViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewControllerTest.swift; sourceTree = "<group>"; };
+		3E2B183F2497048A0085A16F /* ImageDownloadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadHelper.swift; sourceTree = "<group>"; };
+		3E2B18402497048A0085A16F /* AsyncImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		3E2B18412497048A0085A16F /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		3E2B18422497048A0085A16F /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		3E2B1848249704D50085A16F /* StringConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstant.swift; sourceTree = "<group>"; };
+		3E2B184A249704E90085A16F /* FontConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontConstant.swift; sourceTree = "<group>"; };
+		3E31086E24940F2500C0D798 /* AlbumListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListCell.swift; sourceTree = "<group>"; };
+		3E31086F24940F2500C0D798 /* AlbumListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListViewController.swift; sourceTree = "<group>"; };
+		3E31087324940F5900C0D798 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
+		3E4924092491AD2500375A44 /* NikeCodeExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikeCodeExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E49240C2491AD2500375A44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E49240E2491AD2500375A44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3E4924152491AD2900375A44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E4924182491AD2900375A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E49241A2491AD2900375A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E49241F2491AD2900375A44 /* NikeCodeExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikeCodeExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4924252491AD2900375A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E4924862493107E00375A44 /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
+		3E4924882493162C00375A44 /* AlbumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumService.swift; sourceTree = "<group>"; };
+		3E49248B2493186D00375A44 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E4924062491AD2500375A44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E49241C2491AD2900375A44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E26B06F2495646E001F5757 /* AlbumList */ = {
+			isa = PBXGroup;
+			children = (
+				3E26B07024956484001F5757 /* AlbumListViewModel.swift */,
+				3E26B07224956484001F5757 /* AlbumCellViewModel.swift */,
+			);
+			path = AlbumList;
+			sourceTree = "<group>";
+		};
+		3E26B076249564AA001F5757 /* AlbumDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3E26B077249564BB001F5757 /* AlbumDetailViewModel.swift */,
+			);
+			path = AlbumDetail;
+			sourceTree = "<group>";
+		};
+		3E26B07924959FC2001F5757 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				3E26B07C2495A452001F5757 /* Mock.swift */,
+				3E26B07E2495A49E001F5757 /* MockAlbumService.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		3E2B183D2497046E0085A16F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3E2B1847249704B60085A16F /* Constants */,
+				3E2B183E2497048A0085A16F /* Helper */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3E2B183E2497048A0085A16F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3E2B183F2497048A0085A16F /* ImageDownloadHelper.swift */,
+				3E2B18402497048A0085A16F /* AsyncImage.swift */,
+				3E2B18412497048A0085A16F /* Observable.swift */,
+				3E2B18422497048A0085A16F /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3E2B1847249704B60085A16F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3E2B1848249704D50085A16F /* StringConstant.swift */,
+				3E2B184A249704E90085A16F /* FontConstant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3E31086D24940ED300C0D798 /* AlbumListPage */ = {
+			isa = PBXGroup;
+			children = (
+				3E31086F24940F2500C0D798 /* AlbumListViewController.swift */,
+				3E31086E24940F2500C0D798 /* AlbumListCell.swift */,
+			);
+			path = AlbumListPage;
+			sourceTree = "<group>";
+		};
+		3E31087224940F4000C0D798 /* AlbumDetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				3E31087324940F5900C0D798 /* AlbumDetailViewController.swift */,
+				3E26B06D24955D26001F5757 /* AlbumDetailView.swift */,
+			);
+			path = AlbumDetailPage;
+			sourceTree = "<group>";
+		};
+		3E4924002491AD2500375A44 = {
+			isa = PBXGroup;
+			children = (
+				3E49240B2491AD2500375A44 /* NikeCodeExercise */,
+				3E4924222491AD2900375A44 /* NikeCodeExerciseTests */,
+				3E49240A2491AD2500375A44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E49240A2491AD2500375A44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E4924092491AD2500375A44 /* NikeCodeExercise.app */,
+				3E49241F2491AD2900375A44 /* NikeCodeExerciseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E49240B2491AD2500375A44 /* NikeCodeExercise */ = {
+			isa = PBXGroup;
+			children = (
+				3E2B183D2497046E0085A16F /* Utilities */,
+				3E26B07924959FC2001F5757 /* Mock */,
+				3E49248A2493184400375A44 /* Model */,
+				3E4924852493104D00375A44 /* Services */,
+				3E4924802492FE7700375A44 /* ViewModel */,
+				3E49242E2491AEAE00375A44 /* View */,
+				3E49240C2491AD2500375A44 /* AppDelegate.swift */,
+				3E49240E2491AD2500375A44 /* SceneDelegate.swift */,
+				3E4924152491AD2900375A44 /* Assets.xcassets */,
+				3E4924172491AD2900375A44 /* LaunchScreen.storyboard */,
+				3E49241A2491AD2900375A44 /* Info.plist */,
+			);
+			path = NikeCodeExercise;
+			sourceTree = "<group>";
+		};
+		3E4924222491AD2900375A44 /* NikeCodeExerciseTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E4924252491AD2900375A44 /* Info.plist */,
+				3E2B18352496ED500085A16F /* AlbumListViewControllerTest.swift */,
+				3E2B18372496EE970085A16F /* AlbumDetailViewControllerTest.swift */,
+			);
+			path = NikeCodeExerciseTests;
+			sourceTree = "<group>";
+		};
+		3E49242E2491AEAE00375A44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E31086D24940ED300C0D798 /* AlbumListPage */,
+				3E31087224940F4000C0D798 /* AlbumDetailPage */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E4924802492FE7700375A44 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3E26B06F2495646E001F5757 /* AlbumList */,
+				3E26B076249564AA001F5757 /* AlbumDetail */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3E4924852493104D00375A44 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3E4924862493107E00375A44 /* HTTPManager.swift */,
+				3E4924882493162C00375A44 /* AlbumService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3E49248A2493184400375A44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E49248B2493186D00375A44 /* AlbumModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E4924082491AD2500375A44 /* NikeCodeExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E4924282491AD2900375A44 /* Build configuration list for PBXNativeTarget "NikeCodeExercise" */;
+			buildPhases = (
+				3E4924052491AD2500375A44 /* Sources */,
+				3E4924062491AD2500375A44 /* Frameworks */,
+				3E4924072491AD2500375A44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NikeCodeExercise;
+			productName = NikeCodeExercise;
+			productReference = 3E4924092491AD2500375A44 /* NikeCodeExercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E49241E2491AD2900375A44 /* NikeCodeExerciseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E49242B2491AD2900375A44 /* Build configuration list for PBXNativeTarget "NikeCodeExerciseTests" */;
+			buildPhases = (
+				3E49241B2491AD2900375A44 /* Sources */,
+				3E49241C2491AD2900375A44 /* Frameworks */,
+				3E49241D2491AD2900375A44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E4924212491AD2900375A44 /* PBXTargetDependency */,
+			);
+			name = NikeCodeExerciseTests;
+			productName = NikeCodeExerciseTests;
+			productReference = 3E49241F2491AD2900375A44 /* NikeCodeExerciseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E4924012491AD2500375A44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Home;
+				TargetAttributes = {
+					3E4924082491AD2500375A44 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					3E49241E2491AD2900375A44 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 3E4924082491AD2500375A44;
+					};
+				};
+			};
+			buildConfigurationList = 3E4924042491AD2500375A44 /* Build configuration list for PBXProject "NikeCodeExercise" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E4924002491AD2500375A44;
+			productRefGroup = 3E49240A2491AD2500375A44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E4924082491AD2500375A44 /* NikeCodeExercise */,
+				3E49241E2491AD2900375A44 /* NikeCodeExerciseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E4924072491AD2500375A44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4924192491AD2900375A44 /* LaunchScreen.storyboard in Resources */,
+				3E4924162491AD2900375A44 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E49241D2491AD2900375A44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E4924052491AD2500375A44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E26B07524956484001F5757 /* AlbumCellViewModel.swift in Sources */,
+				3E49248C2493186D00375A44 /* AlbumModel.swift in Sources */,
+				3E49240D2491AD2500375A44 /* AppDelegate.swift in Sources */,
+				3E49240F2491AD2500375A44 /* SceneDelegate.swift in Sources */,
+				3E26B07D2495A452001F5757 /* Mock.swift in Sources */,
+				3E2B1849249704D50085A16F /* StringConstant.swift in Sources */,
+				3E2B18462497048A0085A16F /* Helper.swift in Sources */,
+				3E31087124940F2500C0D798 /* AlbumListViewController.swift in Sources */,
+				3E4924892493162C00375A44 /* AlbumService.swift in Sources */,
+				3E31087424940F5900C0D798 /* AlbumDetailViewController.swift in Sources */,
+				3E26B078249564BB001F5757 /* AlbumDetailViewModel.swift in Sources */,
+				3E4924872493107E00375A44 /* HTTPManager.swift in Sources */,
+				3E31087024940F2500C0D798 /* AlbumListCell.swift in Sources */,
+				3E26B07F2495A49E001F5757 /* MockAlbumService.swift in Sources */,
+				3E2B184B249704E90085A16F /* FontConstant.swift in Sources */,
+				3E2B18452497048A0085A16F /* Observable.swift in Sources */,
+				3E2B18442497048A0085A16F /* AsyncImage.swift in Sources */,
+				3E26B07324956484001F5757 /* AlbumListViewModel.swift in Sources */,
+				3E2B18432497048A0085A16F /* ImageDownloadHelper.swift in Sources */,
+				3E26B06E24955D26001F5757 /* AlbumDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E49241B2491AD2900375A44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E2B184C24970F270085A16F /* StringConstant.swift in Sources */,
+				3E2B18382496EE970085A16F /* AlbumDetailViewControllerTest.swift in Sources */,
+				3E2B18362496ED500085A16F /* AlbumListViewControllerTest.swift in Sources */,
+				3E26B0852495B2FC001F5757 /* Mock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E4924212491AD2900375A44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E4924082491AD2500375A44 /* NikeCodeExercise */;
+			targetProxy = 3E4924202491AD2900375A44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E4924172491AD2900375A44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E4924182491AD2900375A44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E4924262491AD2900375A44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E4924272491AD2900375A44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E4924292491AD2900375A44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NikeCodeExercise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.home.NikeCodeExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E49242A2491AD2900375A44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NikeCodeExercise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.home.NikeCodeExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E49242C2491AD2900375A44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NikeCodeExerciseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.home.NikeCodeExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NikeCodeExercise.app/NikeCodeExercise";
+			};
+			name = Debug;
+		};
+		3E49242D2491AD2900375A44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NikeCodeExerciseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.home.NikeCodeExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NikeCodeExercise.app/NikeCodeExercise";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E4924042491AD2500375A44 /* Build configuration list for PBXProject "NikeCodeExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E4924262491AD2900375A44 /* Debug */,
+				3E4924272491AD2900375A44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E4924282491AD2900375A44 /* Build configuration list for PBXNativeTarget "NikeCodeExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E4924292491AD2900375A44 /* Debug */,
+				3E49242A2491AD2900375A44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E49242B2491AD2900375A44 /* Build configuration list for PBXNativeTarget "NikeCodeExerciseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E49242C2491AD2900375A44 /* Debug */,
+				3E49242D2491AD2900375A44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E4924012491AD2500375A44 /* Project object */;
+}
