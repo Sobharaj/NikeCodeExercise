@@ -12,7 +12,7 @@ Feature:
 # Auto layout
 # Data binding
 # Unit Testing
-# Version Controll
+# Version Control
 
 
 Release Note Drive Link:
